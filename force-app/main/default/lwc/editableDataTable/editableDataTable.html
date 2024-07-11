@@ -1,0 +1,15 @@
+<template>
+<lightning-datatable
+    key-field="id"
+    data={templist}
+    show-row-number-column
+    row-number-offset={rowOffset}
+    hide-checkbox-column
+    columns={columns}
+    onchange={handleEditValue}
+    draft-values={draftValues}
+    onrowaction={handleRowAction}>
+</lightning-datatable>
+
+<lightning-button variant="base" label="labelName" title="titleName" onclick={handleClick}></lightning-button>
+</template>
